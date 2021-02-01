@@ -2,9 +2,9 @@
 Este site esta sendo desenvolvido por mim com o intuito de
 aprimorar meus conhecimentos em desenvolvimento web.
 
-##Icones
+## Icones
 
-:package: nova funcionalidade
-:up: atualizacao
-:beetle: correcao de bugs 
-:checkered_flag: release
+- :package: nova funcionalidade
+- :up: atualizacao
+- :beetle: correcao de bugs 
+- :checkered_flag: release
