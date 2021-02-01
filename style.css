@@ -233,3 +233,19 @@ header {
 .social-media i:hover {
     background-color: #0082c8;
 }
+
+.conhecimento-header img {
+    width: 3rem;
+    object-fit: fill;
+}
+
+.conhecimentos {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 4rem);
+}
+
+.conhecimento:nth-child(1) {
+    grid-column: 4 / 7;
+    grid-row: 3 / 5;
+}
