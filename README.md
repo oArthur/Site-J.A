@@ -6,5 +6,5 @@ aprimorar meus conhecimentos em desenvolvimento web.
 
 :package: nova funcionalidade
 :up: atualizacao
-:beatle: correcao de bugs 
-:checkred_flag: release
+:beetle: correcao de bugs 
+:checkered_flag: release
