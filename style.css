@@ -394,4 +394,5 @@ header {
     border-radius: .5rem;
     border: none;
     box-shadow: 0 .1 .8 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
