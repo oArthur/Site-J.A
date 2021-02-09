@@ -329,14 +329,18 @@ header {
     justify-content: space-evenly;
     width: 100%;
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
+}
+
+.sessao-projetos {
+    margin: 0 auto;
+    width: 81%;
 }
 
 .card {
     width: 22rem;
     height: 28rem;
     position: relative;
+    padding: 1rem;
 }
 
 .card-img-wrapper {
@@ -413,7 +417,7 @@ button.slick-prev {
     z-index: 9;
     position: absolute;
     background-color: black;
-    background-image: url(../img/arrow-L.png);
+    background-image: url(./img/arrow-L.png);
     left: 29%;
     bottom: 0px;
 }
@@ -428,7 +432,7 @@ button.slick-next {
     position: absolute;
     object-fit: cover;
     background-color: black;
-    background-image: url(../img/arrow-R.png);
+    background-image: url(./img/arrow-R.png);
     right: 38%;
     bottom: 0;
 }
