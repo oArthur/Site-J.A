@@ -7,7 +7,8 @@ hamburguer.addEventListener("click", function() {
 $('.projetos').slick({
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false,
+    dots: true,
+    arrows: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
