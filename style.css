@@ -287,6 +287,7 @@ header {
 }
 
 .sessao-representadas {
+    height: 100vh;
     background-color: #f5f5f588;
 }
 
@@ -326,16 +327,25 @@ header {
     width: 100%;
 }
 
-.projetos {
+.ljs-parceiras {
     justify-content: space-evenly;
     width: 100%;
     display: flex;
 }
 
-.sessao-projetos {
-    margin: 0 auto;
+.sessao-ljs-parceiras {
     height: 100vh;
+    background-color: #f5f5f588;
+}
+
+.sessao-backgb {
+    margin: 0 auto;
     width: 72rem;
+    height: 45rem;
+    background-color: #ececec;
+    box-shadow: 5px 10px 18px black;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -458,7 +468,7 @@ li.slick-active button {
 
 .contato-left {
     width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(./img/contato.jpg);
+    background: url(./img/contato1.jpg);
     background-size: cover;
 }
 
