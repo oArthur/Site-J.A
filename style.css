@@ -328,7 +328,6 @@ header {
 }
 
 .ljs-parceiras {
-    justify-content: space-evenly;
     width: 100%;
     display: flex;
 }
@@ -467,9 +466,19 @@ li.slick-active button {
 }
 
 .contato-left {
-    width: 35%;
-    background: url(./img/contato1.jpg);
+    width: 40%;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(./img/contato.jpg);
     background-size: cover;
+}
+
+.img-j-a img {
+    width: 19rem;
+    height: 19rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    position: relative;
+    display: block;
 }
 
 .contato-right {
@@ -520,7 +529,7 @@ li.slick-active button {
 .field-label {
     position: absolute;
     left: 0;
-    top: 2rem;
+    /*top: 2rem;*/
     font-size: 1.2rem;
     font-family: var(--font-secundary);
     text-transform: uppercase;

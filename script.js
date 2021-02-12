@@ -1,3 +1,9 @@
+var hamburguer = document.querySelector(".hamburguer");
+
+hamburguer.addEventListener("click", function() {
+    var sidebar = document.querySelector(".container").classList.toggle("show-menu");
+});
+
 $('.ljs-parceiras').slick({
     autoplay: true,
     autoplaySpeed: 3000,
@@ -8,10 +14,4 @@ $('.ljs-parceiras').slick({
     slidesToScroll: 1,
     adaptiveHeight: true,
     variableWidth: true
-});
-
-var hamburguer = document.querySelector(".hamburguer");
-
-hamburguer.addEventListener("click", function() {
-    var sidebar = document.querySelector(".container").classList.toggle("show-menu");
 });
