@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css');
 * {
     margin: 0;
     padding: 0;
@@ -326,13 +324,8 @@ header {
     width: 100%;
 }
 
-.ljs-parceiras {
-    width: 100%;
-    display: flex;
-}
-
 .sessao-ljs-parceiras {
-    height: 100vh;
+    height: 35rem;
     background-color: #f5f5f588;
 }
 
@@ -346,16 +339,22 @@ header {
     justify-content: center;
 }
 
+.ljs-parceiras {
+    width: 1210px;
+    margin: 0 auto;
+    display: flex;
+}
+
 .card {
-    width: 22rem;
-    height: 28rem;
+    width: 21.8rem;
+    height: 11.6rem;
     position: relative;
     padding: 1rem;
 }
 
 .card-img-wrapper {
-    width: 22rem;
-    height: 28rem;
+    width: 100%;
+    height: 100%;
     background-color: #2c2c2c;
     border-radius: .5rem;
 }
@@ -375,27 +374,13 @@ header {
     text-shadow: 0.3 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
 }
 
-.card-info h2 {
-    font-family: var(--font-primary);
-    font-size: 2rem;
-    font-weight: 500;
-    color: #eee;
+.card-info button {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.card-info h3 {
-    font-family: var(--font-action);
-    font-weight: bolder;
-    color: #abadac;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.card-info p {
-    font-family: var(--font-secundary);
-    color: #eee;
-    font-weight: 400;
-    width: 80%;
-    margin-bottom: 2rem;
+.card-info button:hover {
+    color: black;
 }
 
 .btn {
@@ -410,58 +395,30 @@ header {
     border: none;
     box-shadow: 0 .1 .8 rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
-.card-info button {
-    width: 8rem;
-    height: 2.5rem;
-}
-
-.slick-initialized {
-    overflow: hidden;
-}
-
-.slick-dots li button {
-    font-size: 0px;
-    border: 3px #000 solid;
-    width: 11px;
-    height: 11px;
-    background: transparent;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.slick-dots {
-    margin: 0 auto;
-    width: 50%;
-    position: absolute;
-    left: 25%;
-    top: 96%;
-}
-
-.slick-dots li {
-    display: inline-block;
-    padding: 5px;
-}
-
-li.slick-active button {
-    background-color: #00bac6;
-}
-
-
-/*
 button.slick-prev {
     display: inline-block;
     font-size: 0px;
     border: none;
     height: 51px;
     width: 25px;
-    z-index: 9;
+    z-index: 8;
     position: absolute;
     background-color: transparent;
-    background-image: url(../img/arrow-L.png);
-    top: 38%;
-    left: 14%;
+    background-image: url(./img/arrow-left.png);
+    top: 50%;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    right: auto;
+    left: -25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 button.slick-next {
@@ -470,14 +427,92 @@ button.slick-next {
     border: none;
     height: 51px;
     width: 25px;
-    z-index: 9;
+    z-index: 8;
     position: absolute;
     background-color: transparent;
-    background-image: url(../img/arrow-R.png);
-    top: 38%;
-    right: 14%;
+    background-image: url(./img/arrow-right.png);
+    top: 50%;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    right: auto;
+    right: -25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-*/
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 25px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
 
 .sessao-contato {
     width: 100%;
