@@ -31,3 +31,14 @@ document.getElementById('btn-card5').addEventListener('click', function() {
 document.getElementById('btn-card6').addEventListener('click', function() {
     window.open('https://www.condorbrasil.com.br/', '_blank');
 });
+
+function dados_form() {
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var msg = document.getElementById('mensagem').value;
+
+    var dados = console.log("Nome: " + nome + "\n" + "Email: " + email + "\n" + "Mensagem: " + msg);
+    //print na log
+
+    return dados;
+}
