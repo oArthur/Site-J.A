@@ -32,13 +32,25 @@ document.getElementById('btn-card6').addEventListener('click', function() {
     window.open('https://www.condorbrasil.com.br/', '_blank');
 });
 
+function limpartxt() {
+    document.getElementById('nome').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('mensagem').value = "";
+
+}
+
 function dados_form() {
     var nome = document.getElementById('nome').value;
     var email = document.getElementById('email').value;
     var msg = document.getElementById('mensagem').value;
 
-    var dados = console.log("Nome: " + nome + "\n" + "Email: " + email + "\n" + "Mensagem: " + msg);
-    //print na log
+    //--print na log--
+    var dados = "Nome: " + nome + "\n" + "Email: " + email + "\n" + "Mensagem: " + msg;
 
-    return dados;
+    //-- limpar compos --
+    limpar = setTimeout(limpartxt, 3000);
+
+
+
+    return console.log(dados);
 }
